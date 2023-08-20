@@ -1,0 +1,34 @@
+.data-content {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.widther{
+    width: 200%;
+}
+
+.subjects-form{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+}
+
+.buttons-align{
+    display: flex;
+    justify-content: left;
+}
+
+h3{
+    text-align: center;
+}
+
+button{
+    justify-content: center;
+    margin: 10px;
+    width: 100px;
+    height: 60px;
+}
