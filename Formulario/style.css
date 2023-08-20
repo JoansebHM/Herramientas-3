@@ -1,3 +1,14 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-image: url(/Formulario/img/pascualbravo-logo.png);
+    background-size: cover; /* Cambiamos a 'contain' para ajustar el tamaño */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .data-content {
     width: 80%;
     display: flex;
@@ -12,6 +23,7 @@
 }
 
 .subjects-form{
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     border: 1px solid;
@@ -22,11 +34,21 @@
     justify-content: left;
 }
 
+h2{
+    backdrop-filter: blur(10px);
+}
+
 h3{
     text-align: center;
 }
 
+form{
+    backdrop-filter: blur(5px);
+}
+
 button{
+    background-color: steelblue;
+    color: white;
     justify-content: center;
     margin: 10px;
     width: 100px;
