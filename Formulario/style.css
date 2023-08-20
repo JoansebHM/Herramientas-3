@@ -23,8 +23,8 @@ body{
 }
 
 .subjects-form{
+    align-content: center;
     backdrop-filter: blur(5px);
-    display: flex;
     justify-content: center;
     border: 1px solid;
 }
@@ -53,4 +53,8 @@ button{
     margin: 10px;
     width: 100px;
     height: 60px;
+}
+
+table td{
+    text-align: center;
 }
