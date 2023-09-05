@@ -55,7 +55,6 @@ function main(){
         "\nDESEA JUGAR? (Y / N)")
     
     if (ans_input.toLowerCase() == "y"){
-        console.clear()
         rock_paper_scissors()
     } else {
         console.log("En otra ocasión será")
