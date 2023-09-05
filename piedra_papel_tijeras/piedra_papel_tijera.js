@@ -42,8 +42,10 @@ function rock_paper_scissors(){
     console.log("##############\nRESULTADOS\nJugador -> "+player_count+"\nmaquina -> "+pc_count)
     if (player_count < pc_count) {
         console.log("Gano la maquina")
+    } else if (player_count == pc_count){
+        console.log("Empate, ninguno gano")
     } else {
-        console.log("Gano el jugador, felicidades")
+        console.log("Gano el jugador")
     }
 }
 
