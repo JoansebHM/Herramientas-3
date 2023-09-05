@@ -28,7 +28,7 @@ function rock_paper_scissors(){
         let player_input = parseInt(prompt("1 -> piedra\n2 -> papel\n3 -> tijera"));
         let pc_input = get_random()
         let winner = check_winner(player_input, pc_input)
-        console.log("---------\nRONDA "+(i + 1)+"\nJugador elige -> "+game[player_input]+"\nComputador elige -> "+ game[pc_input])
+        console.log("---------\nRONDA "+(i + 1)+"\nJugador elige -> "+game[player_input]+"\nMaquina elige -> "+ game[pc_input])
         if (winner == 1){
             console.log("Gano el jugador")
             player_count += 1
@@ -51,10 +51,11 @@ function rock_paper_scissors(){
 function main(){
     console.log(
         "---------------------\nPIEDA PAPEL O TIJERA\n---------------------"+
-        "\nJUGADORES\n\n - Jugador 1\n - Computadora\n\nNUMERO DE RONDAS ==> 5\n\n")
+        "\nJUGADORES\n\n - Jugador\n - Maquina\n\nNUMERO DE RONDAS ==> 5\n\n")
     
     let ans_input = prompt("Desea jugar? (Y / N)")
     if (ans_input.toLowerCase() == "y"){
+        console.clear()
         rock_paper_scissors()
     } else {
         console.log("No vas a jugar")
