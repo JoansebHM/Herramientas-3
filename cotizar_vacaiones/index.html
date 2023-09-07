@@ -13,37 +13,38 @@
             <h1>Cotiza tus vaciones</h1>
             <div class="row">
                 <label for="">Nro. Personas</label>
-                <input type="number">
+                <input type="number" id="input_personas">
             </div>
             <div class="row">
                 <label for="">Nro. Dias</label>
-                <input type="number">
+                <input type="number" id="input_dias">
             </div>
             <div class="row">
                 <label for="">Valor x Persona</label>
-                <input type="number">
+                <input type="number" id="input_valorXpersona">
             </div>
             
-            <button>COTIZAR</button>
+            <button id="btn_cotizar">COTIZAR</button>
             
             <div class="row">
-                <label for="">Sutotal</label>
-                <input type="number" readonly>
+                <label for="">Subtotal</label>
+                <input type="number" id="sub_box" readonly>
             </div>
             <div class="row">
-                <label for="">Descuento</label>
-                <input type="number" readonly>
+                <label for="">Descuento (15%)</label>
+                <input type="number" id="des_box" readonly>
             </div>
             <div class="row">
                 <label for="">Iva</label>
-                <input type="number" readonly>
+                <input type="number" id="iva_box" readonly>
             </div>
             <div class="row">
                 <label for="">Total</label>
-                <input type="number" readonly>
+                <input type="number" id="total_box" readonly>
             </div>
         </section>
         
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>
