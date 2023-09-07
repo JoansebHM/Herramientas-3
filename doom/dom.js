@@ -46,7 +46,7 @@ let mult_button = document.getElementById("mult_button")
 let div_button = document.getElementById("div_button")
 
 add_button.addEventListener("click", function(event){
-event.preventDefault();
+    event.preventDefault();
 })
 
 sub_button.addEventListener("click", function(event){
