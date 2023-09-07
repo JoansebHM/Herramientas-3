@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1 class="miTitulo">Introduccion al DOM</h1>
+    </nav>
+    <main>
+        <h1 id="MiId">Aca va un identificador</h1>
+        <hr />
+        <section id="btns">
+            <input type="button" value="cambiar txt class" onclick="change_txt_class()"><br>
+            <input type="button" value="cambiar txt ID" onclick="change_txt_id()">
+        </section>
+        <form action="">
+            <fieldset>
+                <legend>Calculadora</legend>
+                <table>
+                    <tr>
+                        <td>Numero 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="first_num">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Numero 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="second_num">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Resultado
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="ans_box" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <button onclick="sumar()" id="add_button">Sumar</button>
+                                <button onclick="restar()" id="sub_button">Restar</button>
+                                <button onclick="multiplicar()" id="mult_button">Multiplicar</button>
+                                <button onclick="dividir()" id="div_button">Dividir</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </main>
+    <script src="/doom/dom.js"></script>
+</body>
+</html>
