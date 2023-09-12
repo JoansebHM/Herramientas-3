@@ -8,6 +8,12 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
+.img-sobrepeso{
+    width: 800px;
+    height: 500px;
+}
+
 img{
     width: 400px;
     height: 500px;

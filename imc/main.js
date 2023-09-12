@@ -22,12 +22,16 @@ function calculate_imc() {
         const imc = peso / (altura ** 2);
         resultado.value = imc.toFixed(2);
         if (imc < 18.5){
+            show_img_imc.classList.remove("img-sobrepeso")
             show_img_imc.src = "./img/peso_insuficiente.png"
-        } else if ((imc > 18.5) && (imc <= 24.9)){
+        } else if ((imc > 18.5) && (imc < 25)){
+            show_img_imc.classList.remove("img-sobrepeso")
             show_img_imc.src = "./img/peso_saludable.png"
-        } else if ((imc > 25.0) && (imc <= 29.9)){
+        } else if ((imc > 25.0) && (imc < 29.9)){
+            show_img_imc.classList.add("img-sobrepeso")
             show_img_imc.src = "./img/sobrepeso.png"
         } else {
+            show_img_imc.classList.remove("img-sobrepeso")
             show_img_imc.src = "./img/obesidad.png"
         }
     }
