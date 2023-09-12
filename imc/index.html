@@ -9,31 +9,34 @@
 <body>
     <main>
         <section class="section-main">
-            <div class="div-info">   
-                <h1>Información</h1>
-                <div class="row">
-                    <label for="">Altura</label>
-                    <input type="number" id="altura_input">
+            <h1>Calculadora de IMC</h1>
+            <div class="div-main">
+                <div class="div-info">   
+                    <h1>Información</h1>
+                    <div class="row">
+                        <label for="">Altura</label>
+                        <input type="number" id="altura_input">
+                    </div>
+                    <div class="row">
+                        <label for="">Peso</label>
+                        <input type="number" id="peso_input">
+                    </div>
+                    <div class="row">
+                        <button id="imc_button">
+                            Calcular IMC
+                        </button>
+                    </div>
+                    <div class="row">
+                        <input type="text" readonly id="imc_input">
+                    </div>
                 </div>
-                <div class="row">
-                    <label for="">Peso</label>
-                    <input type="number" id="peso_input">
+                <div class="div-img-default" id="div-img-default">
+                    <img src="./img/default.png" alt="">
                 </div>
-                <div class="row">
-                    <button id="imc_button">
-                        Calcular IMC
-                    </button>
+                <div class="div-img" id="div-img" style="display: none;">
+                    <img src="" alt="" id="img-section">
                 </div>
-                <div class="row">
-                    <input type="text" readonly id="imc_input">
-                </div>
-            </div>
-            <div class="div-img-default" id="div-img-default">
-                <img src="./img/default.png" alt="">
-            </div>
-            <div class="div-img" id="div-img" style="display: none;">
-                <img src="./img/default.png" alt="" id="img-section">
-            </div>
+            </div>  
         </section>
     </main>
     
