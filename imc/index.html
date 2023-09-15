@@ -10,33 +10,47 @@
     <main>
         <section class="section-main">
             <h1>Calculadora de IMC</h1>
-            <div class="div-main">
-                <div class="div-info">   
-                    <h1>Información</h1>
-                    <div class="row">
-                        <label for="">Altura</label>
-                        <input type="number" id="altura_input">
-                    </div>
-                    <div class="row">
-                        <label for="">Peso</label>
-                        <input type="number" id="peso_input">
-                    </div>
-                    <div class="row">
-                        <button id="imc_button">
-                            Calcular IMC
-                        </button>
-                    </div>
-                    <div class="row">
-                        <input type="text" readonly id="imc_input">
-                    </div>
+            <div class="div-info">   
+                <div class="row">
+                    <label for="">Altura</label>
+                    <input type="number" id="altura_input">
                 </div>
-                <div class="div-img-default" id="div-img-default">
-                    <img src="./img/default.png" alt="">
+                <div class="row">
+                    <label for="">Peso</label>
+                    <input type="number" id="peso_input">
                 </div>
-                <div class="div-img" id="div-img" style="display: none;">
-                    <img src="" class="" alt="" id="img-section">
+                <div class="row">
+                    <button id="imc_button">
+                        Calcular IMC
+                    </button>
                 </div>
-            </div>  
+                <div class="row">
+                    <input type="text" readonly id="imc_input">
+                </div>
+            </div>
+            <div class="images">
+                <div class="row-img1">
+                    <label for="">Bajo De Peso</label>
+                    <img src="./img/bajo.png" alt="">
+                    <label for="">< 18.5</label>
+                </div>
+                <div class="row-img2">
+                    <label for="">Normal - Saludable</label>
+                    <img src="./img/normal.png" alt="">
+                    <label for="">18.5 - 24.9</label>
+                </div>
+                <div class="row-img3">
+                    <label for="">Sobrepeso</label>
+                    <img src="./img/sobrepeso.png" alt="">
+                    <label for="">25 - 29.9</label>
+                </div>
+                <div class="row-img4">
+                    <label for="">Obesidad</label>
+                    <img src="./img/obeso.png" alt="">
+                    <label for="">> 30</label>
+
+                </div>
+            </div>
         </section>
     </main>
     
