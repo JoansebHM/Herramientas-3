@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui;
 }
 
 h1{
@@ -29,6 +30,11 @@ button:hover{
     font-weight: bolder;
 }
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 .main-section{
     height: 100%;
     width: 100%;
@@ -36,12 +42,11 @@ button:hover{
 }
 
 .div-images{
-    width: 33.3%;
+    display: flex;
     height: 100%;
-    background-image: url('./img/hotel1.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* La imagen se ajusta para cubrir todo el div */
-    background-position: center;
+    width: 33.3%;
 }
+
 .buttons-next-prev{
     justify-content: space-between;
     display: flex;
@@ -62,10 +67,15 @@ button:hover{
     align-items: center;
     text-align: center;
     justify-content: center;
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .info{
-    width: 50%;
+    color: white;
+    width: 60%;
 }
 
 .div-calculate{
@@ -74,13 +84,17 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 .tarjeta{
-    backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
+    color: white;
+    width: 90%;
+
 }
 
 .row:not(:last-child) {

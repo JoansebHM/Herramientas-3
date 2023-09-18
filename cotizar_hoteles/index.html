@@ -9,21 +9,18 @@
 <body>
     <main>
         <section class="main-section">
-            <div class="div-images">
+            <div class="div-images" id="div-images">
+                <img src="" alt="" id="image-container">
             </div>
             <div class="div-info">
                 <div class="info">
-                    <h1>
-                        Descripcion
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque quaerat molestias assumenda voluptatum? Fugit est dolores ipsum eum suscipit consequatur praesentium tempore corrupti, velit vel non ad fuga illum.
-                    </p>
+                    <h1 id="hotel-name"></h1>
+                    <p id="hotel-description"></p>
                 </div>
             </div>
             <div class="div-calculate">
                 <section class="tarjeta">
-                    <h1>Cotiza tus vacaiones</h1>
+                    <h1>Cotiza tus vacaciones</h1>
                     <div class="row">
                         <label for="">Nro. Personas</label>
                         <input type="number" id="input_personas">
@@ -56,8 +53,8 @@
                         <input type="number" id="total_box" readonly>
                     </div>
                     <div class="buttons-next-prev">
-                        <button class="prev-button">anterior</button>
-                        <button class="next-button">Siguiente</button>
+                        <button class="prev-button" id="prev-button">Anterior</button>
+                        <button class="next-button" id="next-button">Siguiente</button>
                     </div>
                 </section>
             </div>
