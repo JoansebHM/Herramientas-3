@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const peso = parseFloat(document.getElementById("peso_input").value);
     
         if (isNaN(altura) || isNaN(peso) || altura <= 0 || peso <= 0) {
-            resultado.value = "Ingrese valores validos";
+            resultado.value = "";
+            alert("Ingrese valores validos")
         } else {
             const imc = peso / (altura ** 2);
             resultado.value = imc.toFixed(2);
