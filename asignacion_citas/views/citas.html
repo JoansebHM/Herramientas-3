@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="/src/styles/stylesApp.css">
+</head>
+<body>
+    <main>
+        <section class="main-section">
+            <div class="controls">
+                <div class="tool">
+                    Mostrar Citas
+                </div>
+                <div class="tool" id="new-date">
+                    Nueva Cita
+                </div>
+                <div class="tool">
+                    Eliminar Cita
+                </div>
+                <div class="tool" id="home">
+                    Home
+                </div>
+            </div>
+            <div class="show-info">
+                <div class="info" id="div-show-info">
+                    <h1>
+                        Show database info
+                    </h1>
+                </div>
+                <div class="create-reg" id="reg-div" style="display: none;">
+                    <section class="create-reg-section">
+                        <h1>
+                            REGISTRO
+                        </h1>
+                        <div class="row">
+                            <label for="">Fecha Cita</label>
+                            <input type="date">
+                        </div>
+                        <div class="row">
+                            <label for="">ID Doctor</label>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <label for="">ID usuario</label>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <label for="">Lugar</label>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <button id="save-button">Guardar</button>
+                            <button id="cancel-button">Cancelar</button> 
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/src/JS/citas_.js"></script>
+</body>
+</html>
